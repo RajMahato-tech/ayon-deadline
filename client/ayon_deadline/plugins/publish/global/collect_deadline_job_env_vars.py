@@ -37,7 +37,6 @@ class CollectDeadlineJobEnvVars(pyblish.api.ContextPlugin):
     ]
 
     def process(self, context):
-
         env = {}
         for key in self.ENV_KEYS:
             value = os.getenv(key)
